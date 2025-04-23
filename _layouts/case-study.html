@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+
+<section id="case-study">
+  <h2>{{ page.subtitle }}</h2>
+  <small>{{ page.description }}</small>
+</section>
+
+{% if page.videos %} {% for video in page.videos %}
+<video controls muted autoplay loop preload="metadata">
+  <source src="{{ video.src | relative_url }}" type="video/mp4" />
+</video>
+{% if video.caption %}
+<p>{{ video.caption }}</p>
+{% endif %} {% endfor %} {% endif %} {% if page.images %} {% for image in
+page.images %} {% include image-zoom.html src=image.src alt=page.title %} {% if
+image.caption %}
+<p>{{ image.caption }}</p>
+{% endif %} {% endfor %} {% endif %}

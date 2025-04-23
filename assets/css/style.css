@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'Syne';
+    src: url('/assets/fonts/Syne/Syne-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400 800;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Syne', sans-serif;
+    margin: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 4rem;
+}
+
+header>nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+nav#case-studies-nav {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    width: 100%;
+    padding: 0 4rem;
+    background-color: white;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+header>nav>a,
+nav#case-studies-nav>a {
+    color: black;
+    background-color: white;
+}
+
+header>nav>a.active,
+nav#case-studies-nav>a.active {
+    color: white;
+    background-color: black;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: end;
+    padding: 0 4rem;
+}
+
+main {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 12rem 0;
+
+}
+
+h1 {
+    display: block;
+    font-size: 3rem;
+    margin-block-start: 3rem;
+    margin-block-end: 3rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 800;
+    unicode-bidi: isolate;
+    text-transform: uppercase;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5rem;
+    margin-block-start: 1.5rem;
+    margin-block-end: 1.5rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+h3,
+header>nav>a {
+    display: block;
+    font-size: 1.17rem;
+    margin-block-start: 1.17rem;
+    margin-block-end: 1.17rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+small {
+    font-size: 0.8rem;
+}
+
+section#case-study {
+    width: 50%;
+    margin-bottom: 4rem;
+}
+
+.image-zoom,
+video {
+    max-width: 100%;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.image-zoom {
+    cursor: zoom-in;
+}
+
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    cursor: zoom-out;
+}
+
+#overlay.show {
+    display: flex;
+}
+
+#overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 1px solid black;
+}

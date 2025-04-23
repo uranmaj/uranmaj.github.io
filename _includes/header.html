@@ -1,0 +1,25 @@
+<header>
+  <nav>
+    {% for item in site.nav %}
+    <a
+      href="{{ item.url | relative_url }}"
+      class="{% if page.url contains item.url and item.url != '/' %}active{% endif %}"
+    >
+      {{ item.title }}
+    </a>
+    {% endfor %}
+  </nav>
+</header>
+
+{% if page.url contains "/case-studies" %}
+<nav id="case-studies-nav">
+  {% for case in site.case-studies %}
+  <a
+    href="{{ case.url }}"
+    class="{% if page.url contains case.url %}active{% endif %}"
+  >
+    {{ case.title }}
+  </a>
+  {% endfor %}
+</nav>
+{% endif %}
