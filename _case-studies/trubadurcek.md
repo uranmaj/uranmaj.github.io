@@ -4,6 +4,7 @@ title: Trubadurček
 subtitle: A system for automatic generation and evaluation of elementary school level rhythmic ear-training exercises
 task: Create a system that enables the automatic generation and evaluation of rhythmic dictation exercises with different types of exercises. Evaluate the system and identify the key advantages and disadvantages of individual types of exercises for the lower music school level in the Slovenian music education system.
 link: https://repozitorij.uni-lj.si/Dokument.php?id=161140
+tech: React Native | Laravel | VexFlow | MySQL
 images:
   - src: /assets/images/trubadurcek-home.png
     caption: |

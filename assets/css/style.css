@@ -18,6 +18,10 @@
     --border: 1px solid black;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body.dark {
     --color: white;
     --background-color: black;
@@ -174,6 +178,21 @@ ol {
     list-style-type: decimal;
     list-style-position: inside;
     padding-inline-start: 0;
+}
+
+#case-studies_table {
+    border-collapse: collapse;
+}
+
+#case-studies_table td {
+    white-space: nowrap;
+    padding-right: 1.5rem;
+    vertical-align: bottom;
+}
+
+#case-studies_table .case-studies_table-tech,
+#case-studies_table .case-studies_table-subtitle {
+    font-size: 0.9rem;
 }
 
 section#case-study {

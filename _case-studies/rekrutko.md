@@ -4,6 +4,7 @@ title: Rekrutko
 subtitle: A smart platform that simplifies hiring, automates processes, and connects the right talent with the best opportunities
 task: Design the visual identity and complete UI/UX of a modern hiring platform. Develop the application as part of a three-member founding team. Build core features including job posting, recruiter collaboration, and candidate tracking across customizable hiring stages to streamline the hiring process.
 link: https://rekrutko.si
+tech: Figma | Flutter | Firebase
 images:
   - src: /assets/images/rekrutko-jobs.webp
     caption: |
