@@ -1,5 +1,4 @@
 title: Maj Uran
-email: email
 description: Personal portfolio
 baseurl: ""
 url: ""
@@ -12,8 +11,6 @@ nav:
     url: /case-studies
   - title: CV
     url: /cv
-  - title: Contact
-    url: /contact
 
 collections:
   case-studies:
