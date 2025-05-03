@@ -45,7 +45,8 @@ h1,
 h2,
 h3,
 a,
-strong {
+strong,
+footer {
     font-family: 'Syne', sans-serif;
 }
 
@@ -144,6 +145,7 @@ h2 {
 }
 
 h3,
+footer>span,
 header>nav>a {
     display: block;
     font-size: 1.17rem;
