@@ -19,8 +19,8 @@ layout: default
 </div>
 {% endfor %} {% endif %} {% if page.images %} {% for image in page.images %}
 <div class="case-study_image">
-  {% include image-zoom.html src=image.src alt=page.title %} {% if image.caption
-  %} {{ image.caption | markdownify }} {% endif %}
+  {% if image.src %} {% include image-zoom.html src=image.src alt=page.title %}
+  {% endif %} {% if image.caption %} {{ image.caption | markdownify }} {%endif%}
 </div>
 {% endfor %} {% endif %} {% if page.link %}
 <div class="case-study_link">

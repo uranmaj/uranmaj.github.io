@@ -7,13 +7,12 @@ tech: Flutter | PocketBase
 images:
   - src: /assets/images/studq.png
     caption: |
-      ### Problem & Motivation
-
       In academic institutions, verifying the identity of students during exam entry has traditionally relied on manual checking of **ID cards** and **attendance lists**. This process is slow, error-prone, and stressful for professors, especially when managing large groups under time constraints.
 
       The studQ app addresses this problem by offering a **QR-code-based identification system**, allowing professors to verify students' presence with a quick scan instead of cross-checking physical documents.
 
-      ### How it Works
+  - caption: |
+      ### How it works
 
       Each student, upon being added to the system, is issued a **unique, persistent QR code**. This code is sent to their email and remains the same throughout their education.
 
@@ -23,7 +22,8 @@ images:
       - Manually add or **import student data** via CSV  
       - View a detailed participant list showing full name, student ID, email, and a checkmark for attendance
 
-      ### Scanning Phase
+  - caption: |
+      ### Scanning phase
 
       **Scanning becomes available 30 minutes before** the event and remains active **until 30 minutes after** it begins. This window ensures structure while enforcing participation policies.
 
@@ -36,7 +36,8 @@ images:
 
       This ensures only verified, pre-registered participants enter the exam room, saving time and improving security.
 
-      ### Key Features
+  - caption: |
+      ### Key features
 
       - Clear **event lifecycle management** (upcoming, in progress, completed)
       - **Email dispatch** with personal QR upon student registration
@@ -44,7 +45,8 @@ images:
       - **Fast QR scanning** with instant feedback
       - Real-time **attendance tracking**
 
-      ### Vision for the Future
+  - caption: |
+      ### Vision for the future
 
       The goal is for studQ to be **fully integrated** into school systems. When students enroll and receive IDs, they are automatically registered in the app.
 
