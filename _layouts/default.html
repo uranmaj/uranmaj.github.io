@@ -3,12 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="{{ site.description }}">
-  <meta name="author" content="{{ site.author }}">
-  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta name="description" content="{{ page.subtitle | default: site.description }}">
+  <meta name="author" content="{{ site.title }}">
+
+  <meta property="og:title" content="{{ site.title }}{% if page.title %} ? {{ page.title }}{% endif %}">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="{{ site.logo | default: '' }}">
-  <title>{{ page.title | default: site.title }}</title>
+  <meta property="og:url" content="{{ page.url | absolute_url | replace: '.html', '/' }}">
+  <meta property="og:image" content="{{ page.images[0].src | default: site.image | absolute_url }}">
+  <meta property="og:description" content="{{ page.subtitle | default: site.description }}">
+
+  <title>{{ site.title }}{% if page.title %} ? {{ page.title }}{% endif %}</title>
 
   <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-touch-icon-57x57.png" />
   <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-touch-icon-114x114.png" />
@@ -23,7 +27,7 @@
   <link rel="icon" type="image/png" href="/assets/favicon/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="/assets/favicon/favicon-16x16.png" sizes="16x16" />
   <link rel="icon" type="image/png" href="/assets/favicon/favicon-128.png" sizes="128x128" />
-  <meta name="application-name" content="&nbsp;"/>
+  <meta name="application-name" content="{{ site.title }}">
   <meta name="msapplication-TileColor" content="#FFFFFF" />
   <meta name="msapplication-TileImage" content="/assets/favicon/mstile-144x144.png" />
   <meta name="msapplication-square70x70logo" content="/assets/favicon/mstile-70x70.png" />
