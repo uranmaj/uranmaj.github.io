@@ -232,6 +232,10 @@ video {
     cursor: zoom-in;
 }
 
+.image-zoom.w-50 {
+    max-width: 50%;
+}
+
 #overlay {
     position: fixed;
     top: 0;
