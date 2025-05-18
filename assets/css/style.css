@@ -18,7 +18,8 @@
     --border: 1px solid black;
 }
 
-html {
+html,
+main {
     overflow-x: hidden;
 }
 
@@ -75,7 +76,6 @@ header>nav {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 1.5rem;
 }
 
 button#mode-switch {
@@ -113,10 +113,15 @@ footer {
     padding: 0 4rem;
 }
 
+footer>span {
+    color: var(--color);
+    background-color: var(--background-color);
+}
+
 main {
     max-width: 50rem;
     margin: 0 auto;
-    padding: 12rem 0;
+    padding: 12rem 4rem;
 }
 
 h1 {
@@ -259,4 +264,30 @@ video {
     max-height: 90%;
     border: var(--border);
     background-color: var(--background-color);
+}
+
+@media (max-width: 768px) {
+
+    header,
+    footer {
+        padding: 0 1rem;
+    }
+
+    nav#case-studies-nav {
+        gap: 0.25rem;
+        padding: 0.5rem 1rem;
+        flex-direction: column;
+    }
+
+    main {
+        padding: 12rem 1rem;
+    }
+
+    section#case-study {
+        width: 80%;
+    }
+
+    .image-zoom.w-50 {
+        max-width: 80%;
+    }
 }
