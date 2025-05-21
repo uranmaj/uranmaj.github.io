@@ -1,6 +1,8 @@
 url: https://uranmaj.com
 baseurl: ""
 
+permalink: pretty
+
 title: Maj Uran
 description: Web + mobile developer / designer
 image: /assets/images/majuran.webp
@@ -9,9 +11,9 @@ nav:
   - title: Maj Uran
     url: /
   - title: Case studies
-    url: /case-studies
+    url: /case-studies/
   - title: CV
-    url: /cv
+    url: /cv/
 
 collections:
   case-studies:

@@ -6,13 +6,13 @@
   <meta name="description" content="{{ page.subtitle | default: site.description }}">
   <meta name="author" content="{{ site.title }}">
 
-  <meta property="og:title" content="{{ site.title }}{% if page.title %} ? {{ page.title }}{% endif %}">
+  <meta property="og:title" content="{{ site.title }}{% unless page.url == '/' %} ? {{ page.title }}{% endunless %}">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ page.url | absolute_url | replace: '.html', '/' }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:image" content="{{ page.images[0].src | default: site.image | absolute_url }}">
   <meta property="og:description" content="{{ page.subtitle | default: site.description }}">
 
-  <title>{{ site.title }}{% if page.title %} ? {{ page.title }}{% endif %}</title>
+  <title>{{ site.title }}{% unless page.url == '/' %} ? {{ page.title }}{% endunless %}</title>
 
   <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-touch-icon-57x57.png" />
   <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-touch-icon-114x114.png" />
