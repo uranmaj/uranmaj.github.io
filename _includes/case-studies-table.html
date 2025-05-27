@@ -1,0 +1,13 @@
+<table>
+  <tbody>
+    {% for case in site.case-studies %}
+    <tr>
+      <td>
+        <a href="{{ case.url }}">{{ case.title }}</a>
+      </td>
+      <td>{{ case.tech }}</td>
+      <td>{{ case.subtitle }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

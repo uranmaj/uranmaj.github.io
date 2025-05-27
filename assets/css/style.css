@@ -56,6 +56,7 @@ a {
     background-color: var(--background-color);
     cursor: pointer;
     text-decoration: underline;
+    font-size: 1rem;
 }
 
 a.active {
@@ -191,25 +192,27 @@ ul>li>ul {
     padding-inline-start: 1.2rem
 }
 
-#case-studies_table {
+table {
     border-collapse: collapse;
+    font-size: 0.9rem;
+    margin-block-end: 0.9rem;
 }
 
-#case-studies_table td {
+table tr>td:first-child {
+    font-size: 1rem;
+}
+
+table td {
     white-space: nowrap;
     padding-right: 1.5rem;
     vertical-align: bottom;
-}
-
-#case-studies_table .case-studies_table-tech,
-#case-studies_table .case-studies_table-subtitle {
-    font-size: 0.9rem;
 }
 
 section#case-study {
     width: 50%;
 }
 
+hr,
 section,
 .case-study_image,
 .case-study_video,
