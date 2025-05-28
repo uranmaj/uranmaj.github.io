@@ -2,6 +2,8 @@ url: https://uranmaj.com
 baseurl: ""
 
 permalink: pretty
+kramdown:
+  auto_ids: false
 
 title: Maj Uran
 description: Web + mobile developer / designer
