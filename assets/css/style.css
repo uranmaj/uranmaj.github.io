@@ -214,7 +214,14 @@ section#case-study {
     width: 50%;
 }
 
-hr,
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--color);
+    transform: scaleX(100);
+    margin: 6rem 0;
+}
+
 section,
 .case-study_image,
 .case-study_video,

@@ -5,6 +5,8 @@ title: CV
 
 # {{ page.title }}
 
+---
+
 ## University of Ljubljana (UL FRI)
 
 _Bachelor's Degree in Computer Science, 2018–2021_
