@@ -116,9 +116,10 @@ footer {
     padding: 0 4rem;
 }
 
-footer>span {
+footer>a {
     color: var(--color);
     background-color: var(--background-color);
+    text-decoration: none;
 }
 
 main {
@@ -153,7 +154,7 @@ h2 {
 }
 
 h3,
-footer>span,
+footer>a,
 header>nav>a {
     display: block;
     font-size: 1.17rem;
